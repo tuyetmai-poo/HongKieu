@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-height, height=device-width, initial-scale=1.0, user-scalable=no"
+    />
+
+    <title>SINH NHAT HONG KIEU</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <!-- 🩷 TRANG 1 -->
+    <div id="trang1">
+      <h1>NHẬP PASS ĐI NGƯỜI ĐẸP</h1>
+
+      <div class="container">
+        <div class="avatar">
+          <img src="./hongkieu.jpg" alt="" />
+        </div>
+
+        <div class="keypad">
+          <input
+            type="password"
+            id="password"
+            readonly
+            maxlength="6"
+            placeholder="😉😍😘💕❤️😂"
+          />
+
+          <div class="buttons">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button id="check" onclick="chuyenTrang()">✔</button>
+            <button>0</button>
+            <button id="clear">✖</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 🎁 TRANG 2 -->
+    <div id="trang2" style="display: none; text-align: center">
+      <h2 id="tieuDeQua"></h2>
+      <p id="noiDungQua"></p>
+
+      <!-- Video phát -->
+      <video
+        id="videoChucMung"
+        width="400"
+        height="300"
+        controls
+        style="display: none; margin-top: 20px; border-radius: 10px"
+      ></video>
+    </div>
+
+    <!-- 🎊 TRANG 3 -->
+    <div id="trang3" style="display: none; text-align: center">
+      <h2>🎉 Bạn đã mở hết tất cả món quà rồi! 🎉</h2>
+      <h4>Chúc bạn sinh nhật thật vui vẻ và hạnh phúc 💕</h4>
+      <video
+        id="videoChucMung"
+        width="400"
+        height="300"
+        controls
+        style="display: none; margin-top: 20px; border-radius: 10px"
+      ></video>
+      <div id="confetti-container"></div>
+    </div>
+
+    <canvas
+      id="particleCanvas"
+      style="position: fixed; top: 0; left: 0; z-index: 0; display: none"
+    ></canvas>
+    <audio id="backgroundMusic" src="./nhac.mp3" loop></audio>
+    <script src="./index.js"></script>
+  </body>
+</html>
