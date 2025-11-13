@@ -49,8 +49,8 @@ function startCanvasEffect() {
 
   // MATRIX
   const chars = "CHUC EM SINH NHAT VUI VE HỒNG KIỀU ";
-  const fontSize = 14;
-  const columns = Math.floor(canvas.width / fontSize) * 1.5;
+  const fontSize = 13;
+  const columns = Math.floor(canvas.width / fontSize) * 2;
   const drops = Array(Math.floor(columns)).fill(1);
 
   function drawMatrix() {
@@ -82,7 +82,7 @@ function startCanvasEffect() {
     const tempCtx = temp.getContext("2d");
     temp.width = canvas.width;
     temp.height = canvas.height;
-    tempCtx.font = "bold 100px Roboto Condensed";
+    tempCtx.font = "bold 90px Roboto Condensed";
     tempCtx.textAlign = "center";
     tempCtx.fillText(text, canvas.width / 2, canvas.height / 2);
     const data = tempCtx.getImageData(0, 0, temp.width, temp.height);
@@ -244,3 +244,4 @@ function taoTraiTim() {
     setTimeout(() => heart.remove(), 4000);
   }
 }
+
