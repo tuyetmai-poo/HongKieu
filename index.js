@@ -49,8 +49,8 @@ function startCanvasEffect() {
 
   // MATRIX
   const chars = "CHUC EM SINH NHAT VUI VE HỒNG KIỀU ";
-  const fontSize = 13;
-  const columns = Math.floor(canvas.width / fontSize) * 2;
+  const fontSize = 14;
+  const columns = Math.floor(canvas.width / fontSize) * 1.5;
   const drops = Array(Math.floor(columns)).fill(1);
 
   function drawMatrix() {
@@ -82,7 +82,7 @@ function startCanvasEffect() {
     const tempCtx = temp.getContext("2d");
     temp.width = canvas.width;
     temp.height = canvas.height;
-    tempCtx.font = "bold 90px Roboto Condensed";
+    tempCtx.font = "bold 100px Roboto Condensed";
     tempCtx.textAlign = "center";
     tempCtx.fillText(text, canvas.width / 2, canvas.height / 2);
     const data = tempCtx.getImageData(0, 0, temp.width, temp.height);
@@ -112,10 +112,12 @@ function startCanvasEffect() {
     particles.forEach((p) => {
       const dx = p.targetX - p.x;
       const dy = p.targetY - p.y;
-      if (mode === "fall") p.vy += 0.3;
+      
+
       if (mode === "gather") {
-        p.vx += dx * 0.02;
-        p.vy += dy * 0.02;
+        p.vx += dx * 0.01;
+p.vy += dy * 0.01;
+
         p.vx *= 0.85;
         p.vy *= 0.85;
       }
@@ -149,15 +151,15 @@ function startCanvasEffect() {
     createParticles(points);
     animateParticles();
 
-    mode = "fall";
+    
     setTimeout(() => (mode = "gather"), 2000);
     setTimeout(() => {
-      mode = "explode";
-      particles.forEach((p) => {
-        p.vx = (Math.random() - 0.5) * 12;
-        p.vy = (Math.random() - 0.5) * 12;
-      });
-    }, 4000);
+  mode = "explode";
+  particles.forEach((p) => {
+    p.vx = (Math.random() - 0.5) * 12;
+    p.vy = (Math.random() - 0.5) * 12;
+  });
+}, 4000);
 
     currentText++;
     setTimeout(nextText, 5000);
@@ -244,5 +246,3 @@ function taoTraiTim() {
     setTimeout(() => heart.remove(), 4000);
   }
 }
-
-
