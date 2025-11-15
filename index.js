@@ -72,7 +72,7 @@ function startCanvasEffect() {
   drawMatrix();
 
   // PARTICLE TEXT EFFECT
-  const texts = ["HAPPY BIRTHDAY ❤️🎁", "18.12.2006", "NGUYỄN THỊ HỒNG KIỀU"];
+  const texts = ["3", "2", "1", "HAPPY BIRTHDAY ❤️🎁", "18.12.2006", "18.12.2025", "NGUYỄN THỊ HỒNG KIỀU"];
   let currentText = 0;
   let particles = [];
   let mode = "fall";
@@ -200,7 +200,7 @@ function playTypingText() {
   noiDung.innerHTML = ""; // xóa text cũ
 
   const text =
-    "Chúc bạn tôi sinh nhật vui vẻ\n Mong sau này mỗi ngày đối với bạn đều là những ngày đặc biệt \n và đáng nhớ\n Có lẽ lần này sinh nhật bạn tớ không về được rồi\n Nhưng không sao trong lòng vẫn nhớ trong đầu chẳng dám quên\n Một lần nữa chúc cậu có một ngày sinh nhật thật tuyệt vời😘❤️❤️❤️ ";
+    "Chúc bạn tôi sinh nhật vui vẻ\n Mong sau này mỗi ngày đối với bạn đều là những ngày đặc biệt \n và đáng nhớ\n Một lần nữa chúc cậu có một ngày sinh nhật thật tuyệt vời😘❤️❤️❤️ ";
 
   let index = 0;
 
@@ -244,4 +244,5 @@ function taoTraiTim() {
     setTimeout(() => heart.remove(), 4000);
   }
 }
+
 
