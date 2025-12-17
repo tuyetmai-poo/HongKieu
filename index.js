@@ -214,9 +214,9 @@ function playTypingText() {
       } else {
         const span = document.createElement("span");
         span.textContent = char;
-        span.style.marginRight = "2.5px";
+        span.style.marginRight = "1.8px";
         span.style.opacity = 0;
-        span.style.fontFamily = "Poppins, sans-serif";
+        span.style.fontFamily = "dank mono";
         noiDung.appendChild(span);
 
         requestAnimationFrame(() => {
@@ -246,6 +246,7 @@ function taoTraiTim() {
     setTimeout(() => heart.remove(), 4000);
   }
 }
+
 
 
 
