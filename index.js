@@ -202,7 +202,7 @@ function playTypingText() {
   noiDung.innerHTML = ""; // xóa text cũ
 
   const text =
-    "Hay quá ha cuối cùng bạn tui cũng thêm tuổi mới rùi he,\nbằng tuổi tui rùi chứ bình thường phải gọi người ta là chị đó nha.\n Thui thì tuổi mới chúc bạn nhỏ hạnh phúc(cái này thì nhất đinh ròi\n vì có người bạn tuyệt vời như tui mò 🤭🤭🤭),\n xinh đẹp (hoi thừa vì bình thường cũng xinh lắm rùi\n nhưng sau sẽ xinh hơn🥰),\nvà những môn thì sau nhất nhất định sẽ được tích A.\nĐấy chỉ thế thui nói ít mong bạn hiểu nhìu và cuối cùng là\n HAPPY BIRTHDAYYYYYYYYYYYYYY❤️❤️❤️❤️❤️❤️ ";
+    "Hay quá ha cuối cùng bạn tui cũng thêm tuổi mới rùi he,\nbằng tuổi tui rùi chứ bình thường phải gọi người ta là chị đó nha.\n Thui thì tuổi mới chúc bạn nhỏ hạnh phúc(cái này thì nhất định ròi\n vì có người bạn tuyệt vời như tui mò 🤭🤭🤭),\n xinh đẹp (hơi thừa vì bình thường cũng xinh lắm rùi\n nhưng sẽ xinh hơn nữa cơ🥰),\nvà những môn thì sắp tới nhất nhất định sẽ được tích A.\nĐấy chỉ thế thui nói ít mong bạn hiểu nhìu và cuối cùng là\n HAPPY BIRTHDAYYYYYYYYYYYYYY❤️❤️❤️❤️❤️❤️ ";
 
   let index = 0;
 
@@ -246,6 +246,7 @@ function taoTraiTim() {
     setTimeout(() => heart.remove(), 4000);
   }
 }
+
 
 
 
